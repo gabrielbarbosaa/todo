@@ -1,6 +1,6 @@
 "use client"
 import React, { useMemo, useState } from 'react'
-import { Column, Id, Task } from '@/core/types/types';
+import { Column, Id, Task } from '../core/types/types';
 import { FiPlusCircle } from 'react-icons/fi';
 import { DndContext, DragEndEvent, DragOverEvent, DragOverlay, DragStartEvent, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
 import { SortableContext, arrayMove } from '@dnd-kit/sortable'
