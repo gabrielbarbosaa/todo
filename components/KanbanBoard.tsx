@@ -1,12 +1,12 @@
 "use client"
 import React, { useMemo, useState } from 'react'
-import { Column, Id, Task } from '../core/types/types';
+import { createPortal } from 'react-dom';
 import { FiPlusCircle } from 'react-icons/fi';
 import { DndContext, DragEndEvent, DragOverEvent, DragOverlay, DragStartEvent, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
 import { SortableContext, arrayMove } from '@dnd-kit/sortable'
-import { createPortal } from 'react-dom';
 import ColumnContainer from './ColumnContainer';
 import TaskCard from './TaskCard';
+import { Column, Id, Task } from '../core/types/types';
 
 const KanbanBoard = () => {
   const [columns, setColumns] = useState<Column[]>([]);
